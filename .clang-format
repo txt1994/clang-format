@@ -25,7 +25,7 @@ AllowShortLoopsOnASingleLine: false
 AlwaysBreakAfterDefinitionReturnType: None # 已废弃
 AlwaysBreakAfterReturnType: None
 AlwaysBreakBeforeMultilineStrings: false
-AlwaysBreakTemplateDeclarations: MultiLine
+AlwaysBreakTemplateDeclarations: true
 AttributeMacros: ['__capability', '__output', '__ununsed']
 BinPackArguments: true
 BinPackParameters: true
