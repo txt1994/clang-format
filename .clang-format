@@ -6,7 +6,7 @@ Language: Cpp
 # 连续赋值时，对齐所有等号
 AlignConsecutiveAssignments: true  
 # 连续声明时，对齐所有声明的变量名
-AlignConsecutiveDeclarations: true
+AlignConsecutiveDeclarations: false # 变量对齐太过，导致阅读体验不好
 AlignConsecutiveBitFields: Consecutive
 AlignConsecutiveMacros: Consecutive
 AlignTrailingComments: true        
