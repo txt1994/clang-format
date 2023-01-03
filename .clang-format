@@ -4,9 +4,9 @@ IndentWidth: 4
 Language: Cpp                           
 
 # 连续赋值时，对齐所有等号
-AlignConsecutiveAssignments: true  
+AlignConsecutiveAssignments: AcrossComments
 # 连续声明时，对齐所有声明的变量名
-AlignConsecutiveDeclarations: false # 变量对齐太过，导致阅读体验不好
+#AlignConsecutiveDeclarations: true # 效果不好，空格太多
 AlignConsecutiveBitFields: Consecutive
 AlignConsecutiveMacros: Consecutive
 AlignTrailingComments: true        
@@ -25,7 +25,7 @@ AllowShortLoopsOnASingleLine: false
 AlwaysBreakAfterDefinitionReturnType: None # 已废弃
 AlwaysBreakAfterReturnType: None
 AlwaysBreakBeforeMultilineStrings: false
-AlwaysBreakTemplateDeclarations: true
+AlwaysBreakTemplateDeclarations: Yes
 AttributeMacros: ['__capability', '__output', '__ununsed']
 BinPackArguments: true
 BinPackParameters: true
@@ -92,8 +92,6 @@ IncludeIsMainRegex: '(Test)?$'
 IncludeIsMainSourceRegex: ''
 IndentGotoLabels: true
 IndentPPDirectives: BeforeHash # BeforeHash or None
-ReferenceAlignment: Left
-LambdaBodyIndentation: OuterScope
 IndentExternBlock: AfterExternBlock
 AccessModifierOffset: -4
 IndentWrappedFunctionNames: false
@@ -107,8 +105,6 @@ MaxEmptyLinesToKeep: 1 # 1 or 0
 NamespaceIndentation: All
 ObjCBinPackProtocolList: Auto
 ObjCBlockIndentWidth: 2 # 2 or 4
-PPIndentWidth: 4 # 1 or 4
-PackConstructorInitializers: Never
 ObjCBreakBeforeNestedBlockParam: true
 ObjCSpaceAfterProperty: false
 ObjCSpaceBeforeProtocolList: true
@@ -124,8 +120,6 @@ PenaltyIndentedWhitespace: 0
 ReflowComments: true
 SortIncludes: CaseSensitive
 SortJavaStaticImport: Before
-SeparateDefinitionBlocks: Leave # Never , Always, Leave 
-ShortNamespaceLines: 1
 SpaceAroundPointerQualifiers: Default
 PointerAlignment: Left  
 SortUsingDeclarations: true
@@ -142,7 +136,7 @@ SpaceBeforeRangeBasedForLoopColon: true
 SpaceInEmptyBlock: false
 SpaceInEmptyParentheses: false
 SpacesBeforeTrailingComments: 1
-SpacesInAngles: Always
+SpacesInAngles: true
 SpacesInConditionalStatement: false
 SpacesInContainerLiterals: true
 SpacesInCStyleCastParentheses: false
@@ -167,4 +161,4 @@ WhitespaceSensitiveMacros:
   - NS_SWIFT_NAME
   - CF_SWIFT_NAME
 TabWidth: 4                        
-Standard: c++20                
+Standard: Latest
